@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/editTextKlient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nazwa klienta"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Rozmiar pizzy:"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupRozmiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioMala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mała" />
+
+        <RadioButton
+            android:id="@+id/radioSrednia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Średnia" />
+
+        <RadioButton
+            android:id="@+id/radioDuza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duża" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBoxSer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodatkowy ser" />
+
+    <Button
+        android:id="@+id/buttonPodsumowanie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Przejdź do podsumowania" />
+
+</LinearLayout>
